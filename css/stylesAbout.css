@@ -48,7 +48,6 @@
   width: 50%;
   flex-direction: column;
   @media only screen and (max-width:1050px){
-    align-self: auto;
     width: 100%;
     padding: 0 30px;
   }
@@ -64,6 +63,7 @@
   }
 }
 .about__title.ui.heading{
+  color: var(--netraul_white) !important;
   @media only screen and (max-width:1050px){
     display: flex;
     justify-content: center;
@@ -77,6 +77,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .row-1{
   display: flex;
   align-self: stretch;
@@ -126,6 +127,7 @@
   @media only screen and (max-width: 1050px)
 {
   width: 100%;
+  margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }}
