@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Barbara Zelek - Front-End Developer</title>
+    <meta name="vieport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesHome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="home">
+      <!-- header section -->
+      <div class="columnheaderlog">
+        <header class="header">
+          <p class="header__logo">BARBARA ZELEK</p>
+          <ul class="header__menu">
+            <li>
+              <a href="about.html">
+                <p class="header__menu-item ui heading size-texts">About</p>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:zelek.barbara@gmail.com">
+                <p class="header__menu-item ui heading size-texts">Contact</p>
+              </a>
+            </li>
+          </ul>
+        </header>
+        <!-- hero section -->
+        <div class="profile container-xs">
+          <div class="profile__content">
+            <div class="profile__bio">
+              <div class="profile__header">
+                <p class="about_title ui text size-heading_one">
+                  BARBARA ZELEK
+                </p>
+                <p class="profile__description ui text size-body_medium">
+                  Polish front-end developer residing amidst the breathtaking scenery of Switzerland.
+                </p>
+              </div>
+              <div class="profile__actions">
+                <button
+                  class="profile__contact-button ui button"
+                >
+                  <a href="mailto:zelek.barbara@gmail.com">
+                    <p class="header__menu-item ui heading contact">Contact me</p>
+                  </a>
+                </button>
+                <div class="profile__social-links">
+                  <button 
+                    class="profile__social-link ui button linkedinButton"
+                  >
+                    <img src="images/linkedin.svg" alt="linkedin icon" class="img-social-link" />
+                  </button>
+                  <button 
+                    class="profile__social-link ui button gitHubButton"
+                  >
+                    <img src="images/github.svg" alt="github icon" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="profile__image-container">
+              <img
+                src="images/profile-picture.jpg"
+                alt="profile main picture"
+                class="profile__image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+     
+        <div class="columnlinefive">
+          <div class="linefive_one"></div>
+          <div class="container-xs">
+            <div class="about__content">
+              <p class="about__title ui text size-heading_one">About me</p>
+              <div class="about__description-container">
+                <div class="about__description">
+                  <h1
+                    class="about__description-text ui heading size-heading_three"
+                  >
+                    Hi, I’m  Barbara- a passionate and self-taught front-end developer.
+                  </h1>
+                  <p class="about__description-more ui text size-body_medium">
+                    My journey into web development began with a curiosity about how websites are built and a desire to turn my ideas into reality.
+                  </p>
+                  <div class="about__additional-info">
+                    <a href="about.html"
+                    class="about__additional-title ui heading size-misc_link">
+                      More about me
+                  </a>
+                    <div class="about_additional-underline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="contact-section container-xs">
+            <div class="contact-section__info">
+              <div class="contact-section__social">
+                <div class="contact-section__heading">
+                  <p class="contact-section__title ui heading size-heading_two">
+                    Let’s Connect
+                  </p>
+                
+                </div>
+                <div class="contact-section__social-links">
+                  <button 
+                    class="profile__social-link ui button linkedinButton"
+                  >
+                    <img src="images/linkedin.svg" alt="" class="img-social-link" />
+                  </button>
+                  <button
+                    class="profile__social-link ui button gitHubButton"
+                  >
+                    <img src="images/github.svg" alt="" />
+                  </button>
+                  <button 
+                    class="profile__social-link ui button "
+                  >
+                    <img src="images/instagram.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <form class="contact-section__form" id="contactForm">
+              <div class="contact-section__form-fields">
+                <div class="contact-section__field">
+                  <h3 class="ui heading size-body_small">Name</h3>
+                  <label
+                    class="contact-section__input--name ui input "
+                  >
+                    <input name="NameInput" type="text" id ="name" placeholder="Enter your name"/>
+                  </label>
+                </div>
+                <div class="contact-section__field">
+                  <h3 class="ui heading size-body_small">Email</h3>
+                  <label
+                    class="contact-section__input--name ui input email "
+                  >
+                    <input name="EmailInput" type="email" id="email" placeholder="Enter your email address" />
+                  </label>
+                </div>
+                <div class="contact-section__field--subject">
+                  <h3 class="ui heading size-body_small">Subject</h3>
+                  <label
+                    class="contact-section__input--name ui input "
+                  >
+                    <input name="SubjectInput" type="text" id="subject" placeholder="Enter your subjecct"/>
+                  </label>
+                </div>
+                <div class="contact-section__field--subject">
+                  <h3 class="ui heading size-body_small">Message</h3>
+                  <textarea
+                    class="contact-section__textarea--message ui "
+                    name="MessaheInput"
+                    id="message"
+        
+                  >
+                  </textarea>
+                </div>
+              </div>
+              <button type="submit"
+                class="contact-section__submit-button ui button "
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          
+        </div>
+        <div class="linefive_one_footer"></div>
+        <footer>
+          <p>&copy; <span id="copyright"> </span> <span class="footer__description">All rights reserved.</span>  </p>
+        </footer>
+        
+    
+     
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
