@@ -16,43 +16,43 @@ buttonsG.forEach(function(button){
   button.addEventListener("click", handleButtonGitHub);
 })
 
+const form = document.getElementById('form');
 
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-  event.preventDefault();
+
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+
+
+
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
   
-  const name = document.getElementById("name").value.trim();
-const email = document.getElementById("email").value.trim();
-const subject = document.getElementById("subject").value.trim();
-const message = document.getElementById("message").value.trim();
 
-
-let isValid = true;
-if(name===""){
-  alert("Name is required");
-  isValid =false;
-}
-
-if (email ===""){
-  alert("Valid email is required");
-  isValid =false;
-}
-if (subject===""){
-  alert ("Subject is required");
-  isValid =false;
-}
-if(message===""){
-  alert("Message is required");
-  isValid =false;
-}
-if(isValid){
-  alert("Form submitted successfully");
- let inputs = document.querySelectorAll("input");
- let text = document.getElementById("message");
- inputs.forEach(input=>input.value="")
-text.value="";
-
-}
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+   
+        .then(function() {
+          
+            form.reset();
+            swal({
+              title:"Thank You!",
+              text:"Form submitted successfully! I will reply to you soon!",
+              icon:"success"
+            })
+          
+        });
 });
+
+
+
+
 
 const copyright = document.getElementById("copyright");
 copyright.textContent = new Date().getFullYear();

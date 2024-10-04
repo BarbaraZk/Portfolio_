@@ -511,6 +511,7 @@ input{
   background-color: transparent;
   width: 100%;
 }
+
 .ui.input{
   display: flex;
   align-items: center;
@@ -530,6 +531,17 @@ input{
  box-shadow: none;
  background-color: transparent !important;
 }
+#result{
+  color: white;
+}
+/* .h-captcha{
+display: none;
+} 
+
+.active{
+  display: default;
+}  */
+
 footer{
 padding: 15px 0;
   text-align: center;

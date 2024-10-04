@@ -135,14 +135,16 @@
                 </div>
               </div>
             </div>
-            <form class="contact-section__form" id="contactForm">
+            
+            <form  method="POST" class="contact-section__form" id="form" >
+              <input type="hidden" name="access_key" value="5758e72a-ec95-455d-8d19-4178b4fa702c">
               <div class="contact-section__form-fields">
                 <div class="contact-section__field">
                   <h3 class="ui heading size-body_small">Name</h3>
                   <label
                     class="contact-section__input--name ui input "
                   >
-                    <input name="NameInput" type="text" id ="name" placeholder="Enter your name"/>
+                    <input name="name" type="text" id ="name" placeholder="Enter your name" required/>
                   </label>
                 </div>
                 <div class="contact-section__field">
@@ -150,7 +152,7 @@
                   <label
                     class="contact-section__input--name ui input email "
                   >
-                    <input name="EmailInput" type="email" id="email" placeholder="Enter your email address" />
+                    <input name="email" type="email" id="email" placeholder="Enter your email address" required/>
                   </label>
                 </div>
                 <div class="contact-section__field--subject">
@@ -158,26 +160,32 @@
                   <label
                     class="contact-section__input--name ui input "
                   >
-                    <input name="SubjectInput" type="text" id="subject" placeholder="Enter your subjecct"/>
+                    <input name="subject" type="text" id="subject" placeholder="Enter your subject" required/>
                   </label>
                 </div>
                 <div class="contact-section__field--subject">
                   <h3 class="ui heading size-body_small">Message</h3>
                   <textarea
                     class="contact-section__textarea--message ui "
-                    name="MessaheInput"
+                    name="message"
                     id="message"
-        
-                  >
-                  </textarea>
+required
+                  ></textarea>
                 </div>
               </div>
-              <button type="submit"
+              
+             
+              <div class="h-captcha" data-captcha="true" data-theme="dark" > </div>
+            
+              <button type="submit" id="contactButton"
                 class="contact-section__submit-button ui button "
               >
                 Submit
               </button>
+              
             </form>
+            
+            
           </div>
           
         </div>
@@ -189,6 +197,17 @@
     
      
     </div>
+   
     <script src="index.js" charset="utf-8"></script>
+    
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+      </script>
+     
+     
+     
+ 
+
   </body>
 </html>
